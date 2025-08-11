@@ -1,0 +1,92 @@
+/* Garantir que o fundo da página seja preto e o texto branco */
+body {
+    background-color: #000000; /* Cor de fundo preta */
+    color: #ffffff; /* Cor do texto branca */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container do quiz com fundo azul escuro */
+.quiz-container {
+    background-color: #1a2a3a; /* Fundo azul escuro para o container */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Cor do título em verde */
+}
+
+/* Estilo das perguntas */
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo das opções de resposta */
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    color: #ffffff; /* Cor branca para as respostas */
+}
+
+input[type="radio"] {
+    margin-right: 10px; /* Espaço entre o radio e o texto */
+}
+
+/* Estilo do botão de envio */
+#submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Cor verde para o botão */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: #45a049; /* Cor verde mais escuro ao passar o mouse */
+}
+
+/* Estilo do resultado */
+.result-container {
+    display: none; /* Inicialmente escondido */
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #444444; /* Fundo cinza escuro para o resultado */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.result-container h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Cor do título do resultado em verde */
+}
+
+.texto-resultado {
+    font-size: 18px;
+    color: #ffffff; /* Cor branca para o texto do resultado */
+    line-height: 1.6;
+}
